@@ -259,7 +259,7 @@ const validarCliente = (req, res, next) => {
     next();
 };
 
-🚀 Ejecución del Proyecto
+# 🚀 Ejecución del Proyecto
 
 1. Iniciar el Servidor
 
@@ -279,15 +279,41 @@ Ejemplo de solicitud POST:
   "telefono": "0969696969"
 }
 
-🔎 Pruebas y Resultados
+# 🔎 Pruebas y Resultados
 
-Se probaron los endpoints en Postman y funcionan correctamente.
+# Se probaron los endpoints en Postman y funcionan correctamente.
+|- Ejemplo de solicitud POST - Cliente:
+![post](/public/assets/images/POST-Cliente.png)
+
+|- Ejemplo de solicitud GET - Cliente:
+![get](/public/assets/images/GET-Cliente.png)
+
+|- Ejemplo de solicitud PUT - Cliente - ID:
+![put](/public/assets/images/PUT-Cliente-ID.png)
+
+|- Ejemplo de solicitud GET - Cliente- ID:
+![get-id](/public/assets/images/GET-Cliente-ID.png)
+
+|- Ejemplo de solicitud GET - Cliente - ID - Ordenes :
+![get-id-orden](/public/assets/images/GET-Cliente-ID-Orden.png)
+
+|- Ejemplo de solicitud DELETE - Cliente:
+![delete](/public/assets/images/DELETE-Cliente-ID.png)
+
 
 Se validaron datos erróneos y los middlewares rechazaron entradas inválidas.
 
-Las migraciones y relaciones se ejecutaron sin errores.
+ - El nombre debe tener al menos 3 caracteres
+ [validacion1](/public/assets/images/Validacion_1.png)
+ 
+ - El nombre es obligatorio
+ [validacion2](/public/assets/images/Validacion_2.png)
 
-📢 Conclusión
+
+Las migraciones y relaciones se ejecutaron sin errores.
+![migracion](/public/assets/images/Migracion.png)
+
+# 📢 Conclusión
 
 Este sistema implementa una API REST modular y organizada, con buenas prácticas de arquitectura y validaciones. La correcta definición de relaciones en la base de datos asegura la integridad de los datos y la eficiencia en la gestión de órdenes de servicio.
 
