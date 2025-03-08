@@ -2,21 +2,28 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('OrdenServicios', {
+    await queryInterface.createTable('Eventos', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      nombre: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      descripcion: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       fecha: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: false
       },
-      estado: {
-        type: Sequelize.STRING
-      },
-      clienteId: {
-        type: Sequelize.INTEGER
+      capacidad: {
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,
@@ -29,6 +36,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('OrdenServicios');
+    await queryInterface.dropTable('Eventos');
   }
 };

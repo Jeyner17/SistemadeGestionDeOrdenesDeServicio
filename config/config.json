@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "postgres",
-    "password": "Jeyner17",
-    "database": "gestion_servicio",
+    "password": "password",
+    "database": "gestion_eventos",
     "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
-    "password": "Jeyner17",
+    "password": "password",
     "database": "database_test",
     "host": "localhost",
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
-    "password": "Jeyner17",
+    "password": "password",
     "database": "database_production",
     "host": "localhost",
     "dialect": "postgres"

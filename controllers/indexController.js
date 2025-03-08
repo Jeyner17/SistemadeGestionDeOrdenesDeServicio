@@ -1,11 +1,7 @@
-const ClienteController = require('./clienteController');
-const OrdenServicioController = require('./ordenServicioController');
-const TecnicoController = require('./tecnicoController');
-const OrdenTecnicoController = require('./ordenTecnicoController');
+const EventoController = require('./eventoController');
+const ReservaController = require('./reservaController');
 
 module.exports = {
-  ClienteController,
-  OrdenServicioController,
-  TecnicoController,
-  OrdenTecnicoController
+  EventoController,
+  ReservaController
 };
